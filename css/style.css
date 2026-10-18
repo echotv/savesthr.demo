@@ -695,6 +695,29 @@ body.is-presenting .stage-nav.is-visible:not(:disabled):hover { opacity: 1; }
   color: var(--ink-soft);
 }
 
+/* ── Callout note (payroll-dependency reminders) ──────────────────── */
+.callout {
+  display: flex;
+  gap: calc(12 * var(--su));
+  align-items: flex-start;
+  margin-top: calc(24 * var(--su));
+  padding: calc(14 * var(--su)) calc(18 * var(--su));
+  border-radius: calc(14 * var(--su));
+  background: var(--chip-bg);
+  border: calc(1 * var(--su)) solid var(--chip-border);
+  border-left: calc(3 * var(--su)) solid var(--primary);
+}
+.callout svg { width: calc(18 * var(--su)); height: calc(18 * var(--su)); flex-shrink: 0; color: var(--primary); margin-top: calc(2 * var(--su)); }
+.callout p { font-size: calc(13.5 * var(--su)); line-height: 1.55; color: var(--ink); }
+.callout b { color: var(--primary); }
+
+/* 4-node variant (system flow diagram) */
+.timeline.steps-4 .tl-node { width: 22%; }
+.timeline.steps-4 .tl-dot { width: calc(42 * var(--su)); height: calc(42 * var(--su)); margin-bottom: calc(12 * var(--su)); }
+.timeline.steps-4 .tl-dot svg { width: calc(19 * var(--su)); height: calc(19 * var(--su)); }
+.timeline.steps-4 .tl-node b { font-size: calc(15 * var(--su)); }
+.timeline.steps-4 .tl-node span { font-size: calc(13 * var(--su)); }
+
 /* ── Footer / brand strip ─────────────────────────────────────────── */
 .slide-footer {
   position: absolute;
